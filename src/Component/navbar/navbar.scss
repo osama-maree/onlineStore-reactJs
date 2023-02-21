@@ -1,0 +1,73 @@
+@import '../global.scss';
+.parent{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    z-index: 3;
+    .name{
+        font-weight: bold;
+        font-size: 20px;
+        opacity: 70%;
+        color:rgb(100%, 84.3%, 0%);
+        border: 1px solid #eee;
+        padding: 10px;
+        border-radius: 20px;
+
+    }
+  .container{
+    display: flex;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 1s ease-in;
+    .logo{
+        height: 70px;
+        height: 70px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            transition: 1s;
+            &:hover{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .List{
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 60px;
+            @include mobile {
+                gap: 10px;
+            }
+            li{  
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: large;
+                    padding: 10px 15px;
+                    border-bottom: 1px gray solid;
+                    transition: all ease .6s;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        transform: rotate(60deg);
+                        border-radius: 20px;                      
+                    }
+                }
+            }
+            
+        }
+    }
+  }
+}

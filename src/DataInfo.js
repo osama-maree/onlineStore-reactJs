@@ -1,0 +1,50 @@
+export const Data=[
+             {  
+                id:1,
+                title:"Name",
+                img:"/assets/two.jpeg",
+                
+             },
+             {  
+                id:2,
+                title:"Name2",
+                img:"/assets/logo.jpeg"
+             },
+             {  
+                id:3,
+                title:"Name",
+                img:"/assets/two.jpeg",
+             },
+             {  
+                id:4,
+                title:"Name",
+                img:"/assets/first.jpg",
+             },
+             {  
+                id:5,
+                title:"Name",
+                img:"/assets/first.jpg",
+             },
+]
+export const Imag=[
+     {
+      id:1,
+      img:"/assets/first.jpg",
+     },
+     {
+      id:2,
+      img:"/assets/first.jpg",
+     },
+     {
+      id:3,
+      img:"/assets/first.jpg",
+     },
+     {
+      id:4,
+      img:"/assets/first.jpg",
+     },
+     {
+      id:5,
+      img:"/assets/first.jpg",
+     },
+]

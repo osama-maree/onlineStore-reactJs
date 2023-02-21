@@ -1,0 +1,62 @@
+@import '../global.scss';
+.product{
+   background-color: #eee;
+   position: relative;
+   height: 80vh;
+   .Block{
+    display: flex;
+    justify-content: center;
+   
+    h1{
+        margin-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px red solid;
+    }
+   }
+   .arrow{
+    position: absolute;
+    top: 300px;
+    font-size: 70px;
+    animation: Blink 1s infinite;
+    cursor: pointer;
+    opacity: 70%;
+    @keyframes Blink {
+        100%{
+            opacity: 0;
+        }
+    }
+    &.left{
+        left: 100px;
+    }
+    &.right{
+        right: 100px;
+    }
+   }
+   .slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:80px;
+    height: 350px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    img{
+      max-width: 100%;  
+    }
+    .slide {
+        opacity: 0;
+        transition-duration: 1s ease;
+      }
+      
+      .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.08);
+      }
+   }
+
+}

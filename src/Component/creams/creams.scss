@@ -1,0 +1,123 @@
+@import '../global.scss';
+.container{
+.creams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s;
+        .anima{
+            height: 70px;
+        h1{
+           margin-top: 30px;
+           padding-bottom: 10px;
+           border-bottom: green 2px solid;
+           transition: .6s;
+          cursor: pointer;
+           &:hover{
+            background-color: $mainColor;
+            color: white;
+            transform: rotate(-10deg);
+            border-radius: 10px;
+            padding: 10px;
+           }
+        }
+    }
+        p{
+            width: 700px;
+            margin-top: 30px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            @include mobile {
+              padding: 50px;
+              max-width: 600px;
+            }
+        }
+    }
+    .mainPackage{
+          display: grid;
+          grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+          gap: 30px;
+          border: #eee 2px solid;
+          border-radius: 20px;
+          padding: 10px;
+          margin-top: 10px;
+          @include mobile{
+            grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+          }
+          .box{
+            box-shadow: 0 2px 15px rgb(0 0 0 /10%);
+            border-radius: 20px;
+            overflow: hidden;
+            .image{
+                position: relative;
+                 .desc2{
+                       position: absolute;
+                       height: 100%;
+                       width: 100%;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       left: 20px;
+                       top: 0;
+                       left: 0;
+                       font-weight: bold;
+                       color: white;
+                       background-color: $mainColor;
+                       opacity: 0;
+                       a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 20px;
+                        
+                       }
+                    &:hover{
+                        opacity: 70%;
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    transition: 1s;
+                    &:hover{
+                        transform: rotate(10deg) scale(1.1);
+                        opacity: 30%;
+                        
+                    }
+                }
+            }
+          }
+    }
+    .price{
+        margin-bottom: 30px;
+        width: 700px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+        border-radius: 20px;
+        margin: 30px 0;
+        box-shadow:5px 10px red;
+        cursor: pointer;
+        @include mobile{
+            max-width: 400px;
+        }
+       h3{
+        font-size: 40px;
+        span{
+            font-size: 35px;
+            color: grey;
+            opacity: .6;
+        }
+      }
+
+}
+}
+}
