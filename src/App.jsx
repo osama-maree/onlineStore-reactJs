@@ -10,7 +10,6 @@ import Buy from './Component/buy/Buy';
 function App() {
   return (
     <div className="App">
-      <div>Tesdsssdfdsgd</div>
 
      <Navbar/>    
      <Tag/> 
